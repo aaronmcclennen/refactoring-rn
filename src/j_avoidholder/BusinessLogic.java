@@ -13,12 +13,14 @@ public class BusinessLogic {
 		return HttpEndPoint.transmute(newMethod(ret));  // pass result of new method to transmute.
 	}
 
-	public BusinessResult newMethod(ReturnHolder ret) { 
+	public BusinessResult newMethod(ReturnHolder ret) {  	
 		if (flag) {
-			return BusinessResult.OK;	
+			ret.result = BusinessResult.OK;	
+			return BusinessResult.OK;			
 		}
 		else {
-			return BusinessResult.FAIL;				
+			ret.result = BusinessResult.FAIL;	
+			return BusinessResult.FAIL;						
 		}
 	}
 }

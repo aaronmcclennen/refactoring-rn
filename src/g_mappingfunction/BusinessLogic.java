@@ -7,9 +7,9 @@ public class BusinessLogic {
 		flag = Boolean.parseBoolean(payload);
 	}
 
-	public JavaxWsResponse doLogic() {
-		return newMethod(new ReturnHolder());
-	}
+    public JavaxWsResponse doLogic() {
+        return newMethod(new ReturnHolder());
+    }
 
 	public JavaxWsResponse newMethod(ReturnHolder ret) {
 		if (flag) {
